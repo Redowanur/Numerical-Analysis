@@ -1,7 +1,7 @@
 def Bisection(func, a, b, error_accept):
 
     def f(x):
-        from math import sin, cos, tan, log, e, exp
+        from math import sin, cos, tan, log, e, exp, pi
         return eval(func)
 
     error = abs(b-a)
@@ -30,5 +30,6 @@ def Bisection(func, a, b, error_accept):
 
     print(f'After {cnt} iterations the root of the function is {c}')
     print(f'The error is {error}')
+
 
 Bisection('exp(-0.5*x)*(4-x)-2', 0, 1, 0.005)
